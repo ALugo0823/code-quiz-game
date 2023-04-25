@@ -1,0 +1,171 @@
+/* universal selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+/* variable for repeating color */
+:root {
+    --smoky-white: whitesmoke;
+  }
+
+  /* element selectors */
+body {
+    background: rgb(205, 208, 218);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    padding-top: 15px;
+  }
+
+header h4 {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 25px;
+}
+li:nth-child(odd) {
+    background-color: #3c242880;;
+ }
+
+
+li {
+    font-size: 15px;
+}
+/* class selectors */
+.timer {
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    margin: auto;
+    padding: 20px;
+    }
+    
+    
+.start {
+    align-items: center;
+    }
+    
+.start h1, .start p {
+    text-align: center;
+    }
+    
+.questions {
+    display: flex;
+    justify-items: center;
+    padding: 40px 20px;
+    margin: auto;
+    }
+.end {
+    padding: 20px;
+}  
+
+.end input {
+    outline: thick; 
+    border-width: 1px;
+    width: 5%;
+    font-size: 15px;
+    border-radius: 5px;
+    }
+    
+.end input:focus {
+    border: 2px solid var(--smoky-white);
+    }
+    
+.show {
+    display: show;
+    }
+    
+.hide {
+    display: none;
+    }
+     
+.btn {
+    background: rgb(174, 36, 36);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px grey;
+    margin-top: 10px;
+  }
+
+.btn:hover {
+    background: var(--smoky-white);
+    border-radius: 10px;
+    box-shadow: 0 2px grey;
+    cursor: pointer;
+  }
+
+.btn:active {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 grey;
+  }
+
+.btn:focus {
+    outline: none;
+  }
+
+.btn-grid {
+    display: grid;
+    grid-gap: 5px;
+    margin: 20px;
+  }
+
+.startend {
+    width: 25%;
+    margin-top: 10px;
+ }
+
+.answerbtn {
+    width: 60%;
+    text-align: left;
+    font-size: 17px;
+ }
+
+.banner {
+    font-size: 25px;
+    text-align: center;
+    color: #333;
+    margin: 0 100px;
+ }
+
+.banner h2 {
+    border-top: 2px solid #07041581;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+}
+/* ID selectors */
+#question {
+    text-align: left;
+    font-size: 25px;;
+    font-weight: bold;
+    }
+    
+#high-score {
+    text-align: left;
+    }
+    
+#view-high-scores:hover {
+    cursor: pointer;
+    color: var(--smoky-white);
+    }
