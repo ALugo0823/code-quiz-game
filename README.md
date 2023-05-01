@@ -6,7 +6,7 @@ N/A
 
 ## Usage
 Users only need a computer, mobile device, or tablet with an internet connection.
-Deployed website URL: 
+Deployed website URL: https://alugo0823.github.io/code-quiz-game/
 
 ![Coding Quiz Game](./develop/images/coding%20quiz%20game.png)
 
