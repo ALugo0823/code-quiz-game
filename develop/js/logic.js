@@ -1,34 +1,3 @@
-//variable declarations for elements we will be pulling from HTML file
-var questionContainerDiv = document.getElementById("question-container");
-var starterContainerDiv = document.getElementById("starter-container");
-var endgameContainerDiv = document.getElementById("end-container");
-var scoreBannerDiv = document.getElementById("score-banner");
-var initialsFormDiv = document.getElementById("initials-form");
-var highScoresArrayContainerDiv = document.getElementById("high-score-container");
-var viewhighScoresArrayDiv = document.getElementById("view-high-scores");
-var highScoreList = document.getElementById("high-score-list");
-var correctEl = document.getElementById("correct");
-var wrongEl = document.getElementById("wrong");
-
-//variable declarations for buttons we will use from HTML file
-var startBtn = document.querySelector("#start-game");
-var goBackBtn = document.querySelector("#go-back");
-var clearScoresBtn = document.querySelector("#clear-high-scores");
-
-//vars for questions and answers
-var questionEl = document.getElementById("question");
-var ansBtns = document.getElementById("answer-buttons");
-var timerEl = document.querySelector("#timer");
-var score = 0;
-var timeGiven;
-var gameOver;
-timerEl.innerText = 0;
-
-//High Score Array and code that will be used alongside array
-var highScoresArray = [];
-var shuffleQuestions;
-var questionIndex = 0;
-
 // array of questions to be used in the quiz
 var questions = [
   { q: 'How many continents are there in the world?', 
@@ -60,6 +29,37 @@ var questions = [
     choices: [{choice: 'a. world web wide'}, {choice: 'b. world wide web'}, {choice: 'c. worldy wide webs'}, {choice: 'd. webs wide worldwide'}]
   },
 ];
+//variable declarations for elements we will be pulling from HTML file
+var questionContainerDiv = document.getElementById("question-container");
+var starterContainerDiv = document.getElementById("starter-container");
+var endgameContainerDiv = document.getElementById("end-container");
+var scoreBannerDiv = document.getElementById("score-banner");
+var initialsFormDiv = document.getElementById("initials-form");
+var highScoresArrayContainerDiv = document.getElementById("high-score-container");
+var viewhighScoresArrayDiv = document.getElementById("view-high-scores");
+var highScoreList = document.getElementById("high-score-list");
+var correctEl = document.getElementById("correct");
+var wrongEl = document.getElementById("wrong");
+
+//variable declarations for buttons we will use from HTML file
+var startBtn = document.querySelector("#start-game");
+var goBackBtn = document.querySelector("#go-back");
+var clearScoresBtn = document.querySelector("#clear-high-scores");
+
+//vars for questions and answers
+var questionEl = document.getElementById("question");
+var ansBtns = document.getElementById("answer-buttons");
+var timerEl = document.querySelector("#timer");
+var score = 0;
+var timeGiven;
+var gameOver;
+timerEl.innerText = 0;
+
+//High Score Array and code that will be used alongside array
+var highScoresArray = [];
+var shuffleQuestions;
+var questionIndex = 0;
+
   //function for when the go back button is hit on high score page
 function goBack() {
   highScoresArrayContainerDiv.classList.add("hide")
